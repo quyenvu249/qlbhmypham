@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BillActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    <EditText
+        android:id="@+id/edTenHD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên Hóa đơn "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edTenKH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên khách hàng "
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nhân viên"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <EditText
+            android:id="@+id/edDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:hint="Chọn ngày"
+            android:textSize="18dp" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:textColor="#123"
+            android:textSize="18dp"
+            android:id="@+id/btnPicDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="datePicker"
+            android:text="Chọn" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tổng hóa đơn "
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:textColor="#123"
+            android:textSize="18dp"
+            android:id="@+id/btnThemHD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button"
+            android:textColor="#123"
+            android:textSize="18dp"
+            android:id="@+id/btnHDCT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem HĐCT" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvHD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

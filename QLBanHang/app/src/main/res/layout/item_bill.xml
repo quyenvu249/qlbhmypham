@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgHD"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/bill" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTenHD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#15951A"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tvKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#123"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#123"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tvTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#123"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnSua"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/p" />
+
+    <ImageView
+        android:id="@+id/btnXoa"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/x" />
+
+</LinearLayout>
